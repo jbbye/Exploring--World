@@ -1,0 +1,80 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: auto;
+    background-image: url(Background.jpg);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.container{
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ddddc9;
+}
+nav ul li a {
+    display: block;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li {
+    float: left;
+}
+ 
+nav li a:hover:not(.active) {
+    background-color: #ddd1d1;
+}
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+h2 {
+    color: #555;
+    margin-top: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.gallery img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.collage img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.large {
+    width: 20%;
+}
